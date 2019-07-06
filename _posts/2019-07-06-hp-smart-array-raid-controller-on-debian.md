@@ -62,19 +62,18 @@ Smart Array P410i in Slot 0 (Embedded)    (sn: 50014380101D61C0)
     unassigned
         physicaldrive 1I:1:3 (port 1I:box 1:bay 3, SAS, 300 GB, OK)
         physicaldrive 1I:1:4 (port 1I:box 1:bay 4, SAS, 300 GB, OK)
-        physicaldrive 2I:1:5 (port 2I:box 1:bay 6, SAS, 300 GB, OK)
-        physicaldrive 2I:1:6 (port 2I:box 1:bay 7, SAS, 300 GB, OK)
-        physicaldrive 2I:1:7 (port 2I:box 1:bay 8, SAS, 300 GB, OK)
+        physicaldrive 2I:1:5 (port 2I:box 1:bay 5, SAS, 300 GB, OK)
+        physicaldrive 2I:1:6 (port 2I:box 1:bay 6, SAS, 300 GB, OK)
 ```
 
-Theo kết quả trên, tôi đang có 5 ổ chưa được tạo RAID tại Slot 0, array A. Giờ tôi sẽ tạo RAID 0 cho 5 ổ này.
+Theo kết quả trên, tôi đang có 4 ổ chưa được tạo RAID tại Slot 0, array A. Giờ tôi sẽ tạo RAID 0 cho 4 ổ này.
 
 ```bash
-=> ctrl slot=0 create type=ld drives=1I:1:3,1I:1:4,2I:1:5,2I:1:6,2I:1:7 raid=0
+=> ctrl slot=0 create type=ld drives=1I:1:3,1I:1:4,2I:1:5,2I:1:6 raid=0
 ```
 
 Mở rộng thêm 1 chút, nếu muốn tạo RAID 1 thì bạn chạy lệnh sau. =))
 
 ```bash
-=> ctrl slot=0 create type=ld drives=1I:1:3,1I:1:4,2I:1:5,2I:1:6,2I:1:7 raid=1
+=> ctrl slot=0 create type=ld drives=1I:1:3,1I:1:4,2I:1:5,2I:1:6 raid=1
 ```
