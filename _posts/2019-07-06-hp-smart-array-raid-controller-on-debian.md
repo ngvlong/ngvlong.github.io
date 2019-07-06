@@ -12,12 +12,12 @@ tags:
 - ssacli
 - hpe
 - raid
-excerpt: "Máy chủ của tôi vừa được cắm thêm ổ cứng. Tiếp theo tôi sẽ phải tạo RAID và mount các ổ cứng này vào OS để sử dụng. Đơn giản nhất là khởi động lại máy chủ rồi sử dụng công cụ HP Smart Array. Tuy nhiên việc này sẽ ảnh hưởng đến các dịch vụ đang chạy và theo lẽ thường phải thực hiện vào ban đêm. Tôi không thích làm đêm nên tôi đã sử dụng HP Smart Storage Administrator CLI để tạo RAID cho ổ cứng mới mà không phải khởi động tại server"
+excerpt: "Máy chủ của tôi vừa được cắm thêm ổ cứng. Tiếp theo tôi sẽ phải tạo RAID và mount các ổ cứng này vào OS để sử dụng. Đơn giản nhất là khởi động lại máy chủ rồi sử dụng công cụ HP Smart Array. Tuy nhiên việc này sẽ ảnh hưởng đến các dịch vụ đang chạy và theo lẽ thường phải thực hiện vào ban đêm. Tôi không thích làm đêm nên tôi đã sử dụng HP Smart Storage Administrator CLI để tạo RAID cho các ổ cứng mới mà không phải khởi động tại server"
 ---
 
 ## Giới thiệu
 
-Máy chủ của tôi vừa được cắm thêm ổ cứng. Tiếp theo tôi sẽ phải tạo RAID và mount các ổ cứng này vào OS để sử dụng. Đơn giản nhất là khởi động lại máy chủ rồi sử dụng công cụ HP Smart Array. Tuy nhiên việc này sẽ ảnh hưởng đến các dịch vụ đang chạy và theo lẽ thường phải thực hiện vào ban đêm. Tôi không thích làm đêm nên tôi đã sử dụng HP Smart Storage Administrator CLI (ssacli) để tạo RAID cho ổ cứng mới mà không phải khởi động tại server
+Máy chủ của tôi vừa được cắm thêm ổ cứng. Tiếp theo tôi sẽ phải tạo RAID và mount các ổ cứng này vào OS để sử dụng. Đơn giản nhất là khởi động lại máy chủ rồi sử dụng công cụ HP Smart Array. Tuy nhiên việc này sẽ ảnh hưởng đến các dịch vụ đang chạy và theo lẽ thường phải thực hiện vào ban đêm. Tôi không thích làm đêm nên tôi đã sử dụng HP Smart Storage Administrator CLI (ssacli) để tạo RAID cho các ổ cứng mới mà không phải khởi động tại server
 
 ## Cài đặt
 
