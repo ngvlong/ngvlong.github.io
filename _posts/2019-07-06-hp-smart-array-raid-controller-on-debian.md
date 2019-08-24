@@ -72,8 +72,8 @@ Theo kết quả trên, tôi đang có 4 ổ chưa được tạo RAID tại Slo
 => ctrl slot=0 create type=ld drives=1I:1:3,1I:1:4,2I:1:5,2I:1:6 raid=0
 ```
 
-Mở rộng thêm 1 chút, nếu muốn tạo RAID 1 thì bạn chạy lệnh sau. =))
+Mở rộng thêm 1 chút, nếu muốn tạo RAID 5 thì bạn chạy lệnh sau. =))
 
 ```bash
-=> ctrl slot=0 create type=ld drives=1I:1:3,1I:1:4,2I:1:5,2I:1:6 raid=1
+=> ctrl slot=0 create type=ld drives=1I:1:3,1I:1:4,2I:1:5,2I:1:6 raid=5
 ```
